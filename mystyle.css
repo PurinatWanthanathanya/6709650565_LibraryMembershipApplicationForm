@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #3C3633;
+    color: #E0CCBE;
+    font-size: 30pt;
+    height: 80px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+body{
+    background-color: #EEEDEB;
+}
+
+form{
+    padding: 2rem;
+}
+
+footer{
+    background-color: #747264;
+    color: #3C3633;
+    font-size: 18pt;
+}

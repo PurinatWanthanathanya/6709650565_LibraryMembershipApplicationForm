@@ -2,9 +2,95 @@
 <html>
     <head>
         <title>Library</title>
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
-        
+        <header>
+            Library
+        </header>
+        <main>
+            <form>
+                <div class="profile">
+                    <label for="fname">ชื่อ* :</label>
+                    <input type="text" id="fname" name="fname" placeholder="จอห์น" required>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="lname">นามสกุล* :</label>
+                    <input type="text" id="lname" name="lname" placeholder="ซีน่า" required>
+                    <br><br>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" placeholder="John" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="sname">Surname :</label>
+                    <input type="text" id="sname" name="sname" placeholder="Cena" >
+                </div>
+                <br>
+                <label for="gender">เพศ* :</label>
+                <input type="radio" name="gender" required>
+                <label>ชาย</label>
+                <input type="radio" name="gender" required>
+                <label>หญิง</label>
+                <input type="radio" name="gender" required>
+                <label>ไม่ระบุเพศ</label>
+                <br>
+                <br>
+                <label for="studentid">รหัสนักศึกษา* :</label>
+                    <input type="text" id="studentid" name="studentid" placeholder="6709650565" minlength="10" maxlength="10" required>
+                <br>
+                <br>
+                <label for="faculty">คณะที่ศึกษา* :</label>
+                <select id="faculty" required>
+                    <option value="" disabled selected>** กรุณาเลือกคณะที่ศึกษา **</option>
+                    <option value="นิติศาตร์">นิติศาตร์</option>
+                    <option value="พาณิชยศาสตร์และการบัญชี">พาณิชยศาสตร์และการบัญชี</option>
+                    <option value="ศิลปศาสตร์">ศิลปศาสตร์</option>
+                    <option value="วารสารศาสตร์และสื่อสารมวลชน">วารสารศาสตร์และสื่อสารมวลชน</option>
+                    <option value="วิทยาศาสตร์และเทคโนโลยี">วิทยาศาสตร์และเทคโนโลยี</option>
+                    <option value="วิศวกรรมศาสตร์">วิศวกรรมศาสตร์</option>
+                    <option value="แพทยศาสตร์">แพทยศาสตร์</option>
+                    <option value="สหเวชศาสตร์">สหเวชศาสตร์</option>
+                    <option value="ทันตแพทยศาสตร์">ทันตแพทยศาสตร์ </option>
+                    <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+                    <option value="ศิลปกรรมศาสตร์">ศิลปกรรมศาสตร์</option>
+                </select>
+                <br>
+                <br>
+                <label for="email">ที่อยู่อีเมล (E-mail address)* :</label>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
+                <br>
+                <br>
+                <label for="phone">เบอร์โทรศัพท์* :</label>
+                <input type="tel" id="phone" name="phone" placeholder="089-765-4321" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+                <br>
+                <label for="bdate">วันเดือนปีเกิด* :</label>
+                <input type="date" id="bdate" name="bdate" required>
+                <br>
+                <br>
+                <label for="typesofbook">ประเภทของหนังสือที่สนใจ :</label>
+                <select id="typesofbook" >
+                    <option value="."></option>
+                    <option value="นวนิยาย">นวนิยาย</option>
+                    <option value="นิตยสาร">นิตยสาร</option>
+                    <option value="สารคดี">สารคดี</option>
+                    <option value="เรื่องแต่ง">เรื่องแต่ง</option>
+                    <option value="ชีวประวัติ">ชีวประวัติ</option>
+                    <option value="การ์ตูน">หนังสือการ์ตูน</option>
+                    <option value="บทกวี">บทกวี</option>
+                    <option value="ตำราเรียน">ตำราเรียน</option>
+                    <option value="หนังสือนำเที่ยว">หนังสือนำเที่ยว </option>
+                    <option value="เรื่องสั้น">เรื่องสั้น</option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">ท่านต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
+                <br>
+                <br>
+                <input type="reset">&nbsp;&nbsp;
+                <input type="submit">
+            </form>
+        </main>
+        <footer>copyright</footer>
         
     </body>
 
